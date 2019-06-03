@@ -9,7 +9,7 @@ div.header {
 	font-size: 60px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 300px;
+	margin-top: 260px;
 	width: 357px;
 	font-family: phapp;
 	-webkit-text-stroke: 1px black;
@@ -65,4 +65,17 @@ form.SearchBar input[type="text"]{
 .loli {
 	width: 240px;
 	float: right;
+}
+
+.iconsheet {
+	width: 200px;
+}
+
+.bigicon {
+	width: 50px;
+}
+
+.icon {
+	width: 30px;
+	padding-right: 5px;
 }
