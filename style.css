@@ -55,11 +55,12 @@ form.SearchBar input[type="text"]{
 div.loli{
 	font-family: "sans-serif";
 	padding: 5px;
-	width: 500px;
-	height: 500px;
+	width: 200px;
+	height: 360px;
 	background-image: url(img/loli.png);
-	background-size: 470px;
+	background-size: 200px;
 	background-repeat: no-repeat;
+	background-position: bottom;
 	float: right;
 }
 
