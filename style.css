@@ -1,79 +1,80 @@
-body{
-	background-image: url(img/bg.png);
-	background-position: fixed;
-	background-size: 100%;
-	overflow:hidden;
-}
+@media screen and (min-aspect-ratio: 13/9){
+  body{
+    background-image: url(img/bg.png);
+    background-position: fixed;
+    background-size: 100%;
+    overflow:hidden;
+  }
 
-.dropdown {
-	visibility: hidden;
-	position: absolute;
-	opacity: 0;
-	width: 55px;
-	transform: translateY(-2em);
-  z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-}
+  .dropdown {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    width: 55px;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  }
 
 
-.iconsheet:focus .dropdown,
-.iconsheet:focus-within .dropdown,
-.iconsheet:hover .dropdown {
-  visibility: visible; 
-  opacity: 1;
-  z-index: 1;
-  transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s; 
-}
+  .iconsheet:focus .dropdown,
+  .iconsheet:focus-within .dropdown,
+  .iconsheet:hover .dropdown {
+    visibility: visible; 
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s; 
+  }
 
-.loli:focus .aDigitale,
-.loli:focus-within .aDigitale,
-.loli:hover .aDigitale {
-  visibility: visible; 
-  opacity: 1;
-  z-index: 1;
-  transform: translateX(0%);
-  transition-delay: 0s, 0s, 0.3s;
-}
+  .loli:focus .aDigitale,
+  .loli:focus-within .aDigitale,
+  .loli:hover .aDigitale {
+    visibility: visible; 
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(0%);
+    transition-delay: 0s, 0s, 0.3s;
+  }
 
-div.header {
-	font-size: 60px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10%;
-	width: 357px;
-	user-select: none;
-	font-family: phapp;
-	-webkit-text-stroke: 1px black;
-   	color: white;
-   	text-shadow:
+  div.header {
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 357px;
+    user-select: none;
+    font-family: phapp;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
     3px 3px 0 #000,
     -1px -1px 0 #000,  
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-}
+  }
 
-@font-face {
-  font-family: phapp;
-  src: url(font/jai.ttf);
-}
-
-
-form{
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 20px;
-}
+  @font-face {
+    font-family: phapp;
+    src: url(font/jai.ttf);
+  }
 
 
-form.SearchBar input[type="text"]{
+  form{
+    width: 565px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+
+  form.SearchBar input[type="text"]{
     margin-top: 10px;
     font-size: 15pt;
     padding: 10px;
     border-radius: 22px;
-    width: 60%;
+    width: 540px;
     border: 1px solid white;
     max-width: 600px;
     min-width: 400px;
@@ -82,9 +83,9 @@ form.SearchBar input[type="text"]{
     -moz-osx-font-smoothing: grayscale;
     text-shadow: rgba(0,0,0,.01) 0 0 1px;
     border: solid 2px black;
-}
+  }
 
-div.loli{
+  div.loli{
     font-family: "sans-serif";
     width: 700px;
     height: 315px;
@@ -95,44 +96,46 @@ div.loli{
     right: 0;
     bottom: 0;
     position: absolute;
+  }
+
+  div.aDigitale {
+    visibility: hidden;
+    width: 480px;
+    height: 300px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  }
+
+  div.mess {
+    margin-top: 120px;
+    margin-left: 80px;
+    width: 150px;
+    font-family: Comic Sans MS;
+    text-align: center;
+  }
+
+  p {
+    padding: 5px;
+  }
+
+  h2 {
+    padding: 5px;
+  }
+
+  .iconsheet {
+    width: 55px;
+  }
+
+  .bigicon {
+    width: 50px;
+  }
+
+  .icon {
+    width: 30px;
+    margin-left: 10px;
+  }
 }
 
-div.aDigitale {
-  visibility: hidden;
-  width: 480px;
-  height: 300px;
-  border: solid 1px black;
-  border-radius: 10px;
-  background-color: white;
-  opacity: 0;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-}
-
-div.mess {
-	margin-top: 120px;
-	margin-left: 80px;
-	width: 150px;
-	font-family: Comic Sans MS;
-	text-align: center;
-}
-
-p {
-  padding: 5px;
-}
-
-h2 {
-  padding: 5px;
-}
-
-.iconsheet {
-	width: 55px;
-}
-
-.bigicon {
-	width: 50px;
-}
-
-.icon {
-	width: 30px;
-	margin-left: 10px;
-}
