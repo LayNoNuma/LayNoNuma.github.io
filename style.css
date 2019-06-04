@@ -32,6 +32,7 @@ div.header {
 	margin-right: auto;
 	margin-top: 10%;
 	width: 357px;
+	user-select: none;
 	font-family: phapp;
 	-webkit-text-stroke: 1px black;
    	color: white;
