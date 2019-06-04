@@ -11,19 +11,29 @@ body{
 	opacity: 0;
 	width: 55px;
 	transform: translateY(-2em);
-  	z-index: -1;
-  	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
 
 .iconsheet:focus .dropdown,
 .iconsheet:focus-within .dropdown,
 .iconsheet:hover .dropdown {
-  visibility: visible; /* shows sub-menu */
+  visibility: visible; 
   opacity: 1;
   z-index: 1;
   transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+  transition-delay: 0s, 0s, 0.3s; 
+}
+
+.loli:focus .aDigitale,
+.loli:focus-within .aDigitale,
+.loli:hover .aDigitale {
+  visibility: visible; 
+  opacity: 1;
+  z-index: 1;
+  transform: translateX(0%);
+  transition-delay: 0s, 0s, 0.3s;
 }
 
 div.header {
@@ -76,15 +86,26 @@ form.SearchBar input[type="text"]{
 
 div.loli{
     font-family: "sans-serif";
-    width: 200px;
+    width: 700px;
     height: 315px;
     background-image: url(img/loli.png);
     background-size: 200px;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom right;
     right: 0;
     bottom: 0;
     position: absolute;
+}
+
+div.aDigitale {
+  visibility: hidden;
+  width: 480px;
+  height: 300px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
 div.mess {
@@ -93,6 +114,14 @@ div.mess {
 	width: 150px;
 	font-family: Comic Sans MS;
 	text-align: center;
+}
+
+p {
+  padding: 5px;
+}
+
+h2 {
+  padding: 5px;
 }
 
 .iconsheet {
