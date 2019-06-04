@@ -74,15 +74,16 @@ form.SearchBar input[type="text"]{
 }
 
 div.loli{
-	font-family: "sans-serif";
-	padding: 5px;
-	width: 200px;
-	height: 360px;
-	background-image: url(img/loli.png);
-	background-size: 200px;
-	background-repeat: no-repeat;
-	background-position: bottom;
-	float: right;
+    font-family: "sans-serif";
+    width: 200px;
+    height: 315px;
+    background-image: url(img/loli.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    right: 0;
+    bottom: 0;
+    position: absolute;
 }
 
 div.mess {
