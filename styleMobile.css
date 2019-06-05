@@ -61,18 +61,18 @@
   }
 
   form{
-    width: 725px;
+    width: 755px;
     margin-right: auto;
     margin-left: auto;
   }
 
   form.SearchBar input[type="text"]{
     margin-top: 20px;
-    font-size: 15pt;
+    font-size: 30pt;
     padding: 10px;
     border-radius: 10px;
-    width: 700px;
-    height: 90px;
+    width: 730px;
+    height: 100px;
     border: 1px solid white;
     outline: none !important;
     -webkit-font-smoothing: antialiased;
@@ -115,16 +115,16 @@
   }
 
   .iconsheet {
-    width: 130px;
+    width: 160px;
   }
 
   .bigicon {
-    width: 130px;
+    width: 160px;
   }
 
   .icon {
-    width: 60px;
-    margin-left: 35px;
+    width: 80px;
+    margin-left: 40px;
   }
 
   .disableMe {
