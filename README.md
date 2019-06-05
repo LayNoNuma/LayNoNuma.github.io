@@ -4,6 +4,7 @@ Just a loli search website
 
 # 05/06/2019
   Miglioramento del responsive da Smartphone. 
+  Miglioramento del responsive su iOS Apple.
   Tentativo di uso di iframe per la visualizzazione di google.com; //Fallita
 # 04/06/2019
   Aggiunta assistente per curiosità sul mondo anime e manga;
